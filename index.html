@@ -21,11 +21,11 @@
 		<!-- dark editor --> <link rel="stylesheet" href="lib/css/dark.css">
 		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 
-		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+<!-- 		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">-->
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
+			if( window.location.search.match( /print-pdf/ ) ) {
 				var link = document.createElement( 'link' );
 				link.rel = 'stylesheet';
 				link.type = 'text/css';
@@ -64,7 +64,7 @@
 						<small>Brought to you by <a href="www.girldevelopit.com/chapters/cincinnati">Girl Develop It Cincinnati</a> | <a href="http://www.twitter.com/gdicincinnati">@GDICincinnati</a></small>
 					</p>
 					<p>
-						<small>Presented by Lauren Woodrick | <a href="http://www.twitter.com/loremipsam" target="_blank">@LoremIpsam</a></small>
+						<small>Presented by Amy Moyer </small>
 					</p>
 				</section>
 
@@ -80,12 +80,22 @@
 					</ul>
 				</section>
 
+				<section> <!-- What to expect-->
+					<h2>What to Expect</h2>
+					<ul>
+						<li>This is a survey of a very broad topic</li>
+						<li>Get a sense of what you'd like to know more about</li>
+						<li>I don't know everything, and neither will you</li>
+						<li>Have fun! (and ask questions)</li>
+					</ul>
+				</section>
+
 				<section> <!-- Welcome (Getting to Know You) -->
 					<h2>Getting to Know You</h2>
 					<ol>
 						<li>What's your name?</li>
 						<li>What do you want to take from this class?</li>
-						<li>What's your favorite movie?</li>
+						<li>What's your favorite breakfast food?</li>
 					</ol>
 				</section>
 
@@ -93,7 +103,7 @@
 					<h2>What We'll Be Covering:</h2>
 					<ol>
 						<li class="fragment">The History of Computing</li>
-						<li class="fragment">How Computers Think</li>
+						<li class="fragment">What is a Computer Program</li>
 						<li class="fragment">How Programming Languages Developed</li>
 						<li class="fragment">Basic Programming Concepts</li>
 						<li class="fragment">What Should I Do Next?</li>
@@ -102,7 +112,7 @@
 					<aside class="notes">
 						In this workshop, we'll be sampling from a number of topics, starting
 						with running through the history of how computers as we understand
-						them today came to be, how computers think,
+						them today came to be,
 						and how the way humans talk to computers has changed. Then we'll dig
 						into some top-level programming concepts to lay a nice foundation for
 						your further forays into programming.
@@ -146,6 +156,19 @@
 						to get engineers and navigators the appropriate tables of equations so they could
 						do their jobs well. These were difficult to reproduce accurately, and folks were
 						feeling the pain. In classic infomercial style, THERE HAS TO BE A BETTER A BETTER WAY.
+					</aside>
+				</section>
+
+				<section> <!-- Computation: The Early Years: Analog Calculators -->
+					<h2>Computation: The Early Years</h2>
+					<img src="img/slide-images/astronmer-women.jpg"  alt="Astronomers Computers" />
+
+					<p>
+						<i><small>"Computers working on astronomy calculations"</small></i>
+					</p>
+
+					<aside class="notes">
+						Many observatories including the Cincinnati Observatory used teams of woman to do computations using these tools. These woman were called "Computers" and were essential in the early astronomy discoverys. The observatory has a late night date night that is super cool and I highly suggest checking it out! They tell a story of one of the founding Observatory members marrying their computer. 
 					</aside>
 				</section>
 
@@ -234,211 +257,42 @@
 						... the device, however, was just as large.
 					</aside>
 				</section>
+<!-- Remove How Computers Think Section -->
 
-				<section> <!-- How Computers Think -->
-					<h1>How Do Computers Do Their Thinking?</h1>
-				</section>
-
-				<section> <!-- How Computers Think -->
-					<h2>How Computers Think</h2>
-					<p>
-						Computers have three types of memory &mdash; <strong class="blue">Read-Only Memory</strong>,
-						<strong class="blue">Hard Drive Memory</strong>, and <strong class="blue">Random Access Memory</strong>.
-					</p>
-
-					<aside class="notes">
-						... once digital computers arrived, the base on which computers did
-						all of their thinking, colloquially referred to as “memory,” stabilized
-						into three forms, . It operates a little differently from human memory,
-						but I'll try to make it as clear as possible.
-					</aside>
-				</section>
-
-				<section> <!-- How Do Computers Do Their Thinking: ROM -->
-					<h2>How Computers Think: ROM</h2>
-					<p>
-						<strong class="blue">ROM</strong>, or <strong class="blue">Read-Only Memory</strong>, is hardwritten
-						into chips and handles data essential to a computer's operation.
-					</p>
-
-					<aside class="notes">
-						ROM, or read-only memory, is memory that’s hardwritten onto chips. This kind of
-						memory is typically responsible for serving up the kind of data that’s your
-						computer would be hard-pressed to operate without — like an operating system.
-						Of course, making it quick to access means that files in it can’t be edited,
-						and means that your computer won’t forget how to operate when it’s turned off.
-
-						Do we have any gamers in our midst? Or been down to 16-Bit?
-					</aside>
-				</section>
-				<section>
-					<h2>How Computers Think: ROM</h2>
-					<small>Cartridge-based video games are a small example of read-only memory.</small>
-					<img src="img/slide-images/rom-cartridge.png" alt="A dissected Game Boy game cartridge.">
-
-					<aside class="notes">
-						In the arcade and early home gaming eras, games were printed as read-only memory onto
-						chips and read directly and immediately by their computer systems. One of the pitfalls
-						of writing data to ROM is that space is limited to what you can physically place on the
-						chips, which is why you don't see many cartridges in use nowadays.
-					</aside>
-				</section>
-				<section>
-					<h2>How Computers Think: ROM</h2>
-					<img src="img/slide-images/supermarioworld.gif" alt="A screenshot of Super Mario World.">
-
-					<aside class="notes">
-						It did, however, make these games run at a very snappy pace, which is why we may have
-						had to suffer through replaying levels in older games, it wasn't paired with the
-						indignity of having to sit through a loading screen like we do with games on discs.
-					</aside>
-				</section>
-				<section>
-					<h2>How Computers Think: ROM</h2>
-					<small><strong class="blue">Read-Only Memory</strong> functions similarly to the brainstem.</small>
-					<img src="img/slide-images/heavy-breathing-cat.gif" alt="A fat cat with the caption 'heavy breathing' breathes heavily.">
-					<small style="display: block;" class="fragment">(I'm sorry...)</small>
-				</section>
-
-				<aside class="notes">
-					In a computer, it operates a bit like your brain stem — taking care of activities
-					that are necessary to life so you don’t have to spend all of your thinking on
-					performing them, like breathing. I am sorry if you are now thinking about breathing
-					and actively doing it right now.
-				</aside>
-
-			<!-- How Do Computers Do Their Thinking: Hard Drive Memory -->
-
-				<section>
-					<h2>How Computers Think: <br>Hard Drive Memory</h2>
-					<p>
-						<strong class="blue">Hard Drive Memory</strong> is editable memory that
-						holds files and programs that you create and install.
-					</p>
-
-					<aside class="notes">
-						Hard drive memory — not explicitly named as memory, but still, technically memory, holds files and
-						programs on your computer that you create and install. While ROM is fixed, memory on your hard drive
-						can be written and edited, which makes it very much like long-term memory. When you “save” files,
-						you’re writing them to your hard drive. Flash drives, similarly, are a type of hard drive memory.
-					</aside>
-				</section>
-
-				<section>
-					<h2>How Computers Think: <br>Hard Drive Memory</h2>
-					<img src="img/slide-images/insideout.jpeg" alt="The Emotions from Inside Out">
-
-					<aside class="notes">
-						The human analogue of this type of computer memory is long-term
-						memory. If you’ve seen the movie Inside Out, the way in which memories
-						are stored is actually pretty similar to how computers hold onto data.
-					</aside>
-				</section>
-
-
-				<!-- How Do Computers Do Their Thinking: RAM -->
-
-					<section>
-						<h2>How Computers Think: RAM</h2>
-						<img class="fragment" src="img/slide-images/random-access-memories.jpg" alt="The cover of Daft Punk's Random Access Memories.">
-
-						<aside class="notes">
-							Random Access Memory — not to be confused with the excellent Daft Punk album of the
-							same, but pluralized, name...
-						</aside>
-					</section>
-
-					<section>
-						<h2>How Computers Think: RAM</h2>
-						<p>
-							<strong class="blue">RAM</strong>, or <strong class="blue">Random Access Memory</strong>
-							is volatile memory that handles data that the computer is actively using.
-						</p>
-
-						<aside class="notes">
-							... is volatile — the data it grapples with isn’t ‘written’
-							anywhere, just temporarily stored on a series of electrified capacitors.
-							The more capacitors there are dedicated to this purpose, the more a computer
-							can do at once.
-
-							Has anyone had their computer crash and lost hours worth of work before?
-						</aside>
-					</section>
-
-					<section data-background="img/slide-images/dawsoncrying.gif">
-						<!-- A picture of a cartoon dog in a burning house staying put and
-								saying "This is fine." -->
-						<aside class="notes">
-							This is RAM's fault.
-							Yes, dear friends — this is why there’s a whole lot of weeping and your recent
-							work to files is lost to the ether in the case of a computer crash — your RAM
-							doesn’t suddenly loses context and you’re left with a blank slate.
-						</aside>
-					</section>
-
-					<section>
-						<h2>How Computers Think: RAM</h2>
-						<img src="img/slide-images/50firstdates.jpg" alt="Confused Drew Barrymore sitting next to Adam Sandler.">
-
-						<aside class="notes">
-							Computers are very much like Drew Barrymore's character in 50 First Dates —
-							doomed to lose any "new" memories whenever she loses consciousness. Both tragic,
-							and a blessing in that, as far as she knows, Adam Sandler's filmography ends
-							in the year 2003.
-
-							Fortunately, a lot of programs do some stealth-saving in the background
-							and provide you with recovery files, but that pain and terror is a part of RAM.
-						</aside>
-					</section>
-
-					<section>
-						<h2>How Computers Think: RAM</h2>
-						<p>
-							<strong class="blue">RAM</strong> is like our working memory.
-						</p>
-						<img class="fragment" src="img/slide-images/jenny.gif" style="height: 40vh" alt="Amy Poehler as Leslie Knope looking disgusted with herself.">
-
-						<aside class="notes">
-							In this way, RAM is quite a bit like working memory. If you meet someone and
-							exchange telephone numbers, it’s likely that you’ll forget those 7-10 digits
-							when you’re provided with additional distraction unless you make a conscious
-							choice to memorize that phone number. Meanwhile, Tommy Tutone has ensured that
-							most people of a certain age remember Jenny’s phone number.
-						</aside>
-					</section>
-
-					<section>
-						<h2>How Computers Think: A Review</h2>
-						<ul>
-							<li><strong class="blue">ROM</strong>handles data that's essential for device operation</li>
-							<li><strong class="blue">Hard Drive</strong> handles hardwritten, saved data.</li>
-							<li><strong class="blue">RAM</strong> handles data your computer is using.</li>
-						</ul>
-					</section>
-
-
-				<!-- How Computers Think -->
-
-				<section>
-					<h2>How Computers Think</h2>
-					<img src="img/slide-images/computerspecs.jpg" alt="An example of a computer listing with specifications.">
-
-					<aside class="notes">
-						Another side benefit of this course I forgot to mention is that a little bit
-						of the mystery can be taken out of computer specs.
-
-						Can anyone parse what the highlighted items indicate?
-
-						There is a caveat, being that colloquially, “memory” refers to RAM.
-						Nowadays, 16GB can be a sad amount of hard drive memory, but a pretty
-						kickass amount of RAM.
-					</aside>
-				</section>
 
 				<section> <!-- How We Talk to Computers -->
 					<h1>How Do We Talk To Computers?</h1>
 				</section>
 
+				<section>
+					<h2>What is a Computer Program?</h3>
+					<p>
+						At its core, a computer program is a way of <strong class='blue'>getting something done</strong>.
+					</p>
+					<aside class="notes">
+						Programs are everywhere... Can anyone think of an example of a program that they might have interacted with today? 
+					</aside>
+					
+				</section>
+
+				<section>
+					<h2>Program Examples</h3>
+					<div style="float: left; width: 100%;">
+						<img src="img/slide-images/program_examples2.png"  />
+					</div>
+					
+					<aside class="notes">
+						One of the ways to accomplish "getting something done" is a list of instructions that tells the computer exactly what to do and allows interaction with human beings. Those instructions have to be written in a "language" that the computer can understand.
+					</aside>
+					
+				</section>
+
+				<section>
+					<h2>What is a Programming Language?</h3>
+					<p>
+						A programming language is basically a set of strings (letters, numbers, commands) that is changed into machine code that the computer can understand.
+					</p>
+				</section>
 				 <section> <!-- The Evolution of Programming Languages -->
 					<h2>The Evolution of Programming Languages</h2>
 					<ul>
@@ -648,16 +502,6 @@ STOP RUN.</code></pre>
 				</section>
 
 				<section> <!-- Fourth Generation Programming Languages-->
-					<img src="img/slide-images/ruby.jpeg" style="height: 40vh" alt="A Ruby icon.">
-					<blockquote>I want to see Ruby help <br>every programmer in the world <br>to be productive, and to enjoy programming, and to be happy.</blockquote>
-					<p><small>&mdash; Yukihiro "Matz" Matsumoto</small></p>
-
-					<aside class="notes">
-						... which, as far as goals go, is both noble and adorable.
-					</aside>
-				</section>
-
-				<section> <!-- Fourth Generation Programming Languages-->
 					<h2>How We Talk To Computers: <br>The Fourth Generation</h2>
 					<pre><code contenteditable="ruby">puts 'Hello, world!'</code></pre>
 					<small><i>A touch of Ruby.</i></small>
@@ -787,6 +631,16 @@ STOP RUN.</code></pre>
 					</aside>
 				</section>
 
+				<section> <!-- How To Talk to Computers: A Demonstration -->
+					<h1>Pseudo Code</h1>
+
+					<img src="img/slide-images/kittyparade.png"  />
+
+					<aside class="notes">
+						Planning ahead is key when programming. Often times programs start on a white board or with pen and paper where the programmer writes out the logic in English. Let's try another example with a cat parade. We have 4 different color of cats that are walking down the street in their own kitty parade! For each cat we're going to make a hatch mark on the cooresponding kitty color's paper. We're going to walk through this like a computer though and go top to bottom in sequential order. 
+					</aside>
+				</section>
+
 				<section> <!-- Time to get into coding! -->
 					<h1>Let's Talk To Computers!</h1>
 					<aside class="notes">
@@ -818,9 +672,7 @@ STOP RUN.</code></pre>
 						a space where we can run chunks of code and test them to make sure
 						that it's behaving predictably.
 
-						As I alluded to earlier, we'll be sampling from Ruby, Python, and JavaScript,
-						but for this initial portion, we'll be using JavaScript, which
-						Taylor is going to be running the Intro class for next Wednesday.
+						We'll be using Python for this course because I really think it's the most human readable for a beginner. 
 					</aside>
 				</section>
 
@@ -831,9 +683,9 @@ STOP RUN.</code></pre>
 						<div class="fragment">
 								<p style="font-weight: bold; text-align: left; padding-left: 45px;" class="green small">Examples:</p>
 
-								<pre><code contenteditable class ="javascript">var myName = "Lauren";
-var myQuest = "To find the Holy Grail";
-var myFavoriteColor = "orange";</code></pre>
+								<pre><code contenteditable class ="python"> my_name = "Amy"
+ my_fav_color = "green"
+ my_city = "Bellevue"</code></pre>
 						</div>
             <p class="fragment small" style="margin-top: 20px;">Variables come in several flavors, but here we'll be covering<br> <strong class="blue">Numbers</strong>, <strong class="blue">Strings</strong>, and <strong class="blue">Booleans</strong>.</p>
 
@@ -848,6 +700,8 @@ var myFavoriteColor = "orange";</code></pre>
 							There are a few different types of information that can be stored
 							as variables — some of which are numbers, strings, and booleans.
 							The variables in the code chunk above are strings.
+
+							They all have a name, and hold a value. 
 						</aside>
 				</section>
 
@@ -874,9 +728,9 @@ var myFavoriteColor = "orange";</code></pre>
 				<section> <!-- Variables: Numbers (cont.) -->
 					<h2>Variable Types: Numbers</h2>
 					<p class="copy--small box">Variables can be used to store numbers.</p>
-					<pre><code contenteditable class ="javascript">var bookQuantity = 2;
-var bookPrice = 20;
-var bookDiscount = 0.41;</code></pre>
+					<pre><code contenteditable class ="pyton">book_quantity = 2
+book_price = 20
+book_discount = 0.41</code></pre>
 
 					<aside class="notes">
 						Yes indeed — the price of the book could be stored as a number, as well
@@ -906,8 +760,8 @@ var bookDiscount = 0.41;</code></pre>
 				<section> <!-- Variables: Strings (cont.) -->
 					<h2>Variable Types: Strings</h2>
 					<p class="copy--small box">Variables can also be used to store text.</p>
-					<pre><code contenteditable class ="javascript">var bookTitle = "Romeo and/or Juliet: A Chooseable-Path Adventure";
-var bookAuthor = "Ryan North";</code></pre>
+					<pre><code contenteditable class ="pyton">book_title = "Romeo and/or Juliet: A Chooseable-Path Adventure"
+book_author = "Ryan North"</code></pre>
 					<p>
 						Usually when a string is created in a program, it's surrounded by quotation marks.
 					</p>
@@ -925,7 +779,7 @@ var bookAuthor = "Ryan North";</code></pre>
 					<p>This is best used for numbers that aren't/shouldn't be used in mathematical
 					equations. Numbers can also become part of strings if directly added to them.</p>
 
-					<pre class="fragment"><code contenteditable class ="javascript">var jennysNumber = "8675309";</code></pre>
+					<pre class="fragment"><code contenteditable class ="pyton">jennys_number = "8675309"</code></pre>
 
 					<aside class="notes">
 						However, because it's kind of difficult to manipulate strings, it can
@@ -956,8 +810,8 @@ var bookAuthor = "Ryan North";</code></pre>
 				<section> <!-- Variables: Booleans (cont.) -->
 					<h2>Variable Types: Booleans</h2>
 					<p class="copy--small box">Variables can also be used to store <strong class='blue'>TRUE</strong> or <strong class='blue'>FALSE</strong> as a value.</p>
-					<pre><code contenteditable class ="javascript">var loggedIn = false;
-var primeMember = false;</code></pre>
+					<pre><code contenteditable class ="pyton">logged_in = False
+prime_member = False</code></pre>
 					<p>
 						You can define a condition, then use a Boolean to tell the computer whether that condition is true or false.
 					</p>
@@ -987,33 +841,62 @@ var primeMember = false;</code></pre>
 
 				<section> <!-- Variables: Variables are mutable (example) -->
 						<h2>Variable Ability #1</h2>
-						<pre><code contenteditable class ="javascript">var kittyVillagePopulation = 1;
-console.log(kittyVillagePopulation);
-kittyVillagePopulation = 0;
-console.log(kittyVillagePopulation);</code></pre>
+						<pre><code contenteditable class ="python">kitty_village_population = 1
+print kitty_village_population
+kitty_village_population = 0
+print kitty_village_population</code></pre>
 						<p class="right-align" style="padding-right: 50px;">
-							<a href="https://repl.it/CX3X" target="_blank">(repl.it)</a>
+							<a href="https://repl.it/DP58" target="_blank">(repl.it)</a>
 						</p>
 					<aside class="notes">
 						If we were to take a census of Kitty Village, we might declare the variable
 						kittyVillagePopulation is declared and then assign it the value of 1.
 						If the rather irritated cat removed itself from Kitty Village, then we
 						might reassign the value of Kitty Village to be 0. (follow link)
+
+						
 					</aside>
 				</section>
 
+				
+
 				<section> <!-- Interlude: What's the deal with console.log? -->
-					<h2>Interlude: What's this "console.log"?</h2>
+					<h2>Interlude: What's this "print"?</h2>
 					<p>Not every change in your code is going to be reflected on-screen</p>
-					<p>One way to make sure everything is behaving correctly is to <strong class="blue">log to the console</strong>.</p>
+					<p>One way to make sure everything is behaving correctly is to <strong class="blue">print to the console</strong>.</p>
 
 					<aside class="notes">
 						(Read slide.) This was demonstrated in the previous chunk to show
 						that the value of kittyVillagePopulation was indeed being changed.
-						console.log is used for this purpose in JavaScript, while you see print
-						used for the same purpose in Python and Ruby.
+						print is used for this purpose in Python
 					</aside>
 				</section>
+
+				<section> <!-- Interlude: Grumpy Cat -->
+					<h2>Grumpy Cat Leaves! Start the Parade</h2>
+					<img src="img/slide-images/grumpy-cat.jpg"   />
+					<p class="right-align" style="padding-right: 50px;">
+							
+							<a href="https://repl.it/DP58/11" target="_blank">(repl.it)</a>
+						</p>
+					<aside class="notes">
+						The kitty that left the village is ACTUALLY grumpy cat. And that's why our kitty parade started. Cat Colors are our numeric variables. 
+					</aside>
+				</section>
+
+			<section> <!-- Interlude: What's the deal with console.log? -->
+				<h2>Interlude: Commenting</h2>
+				<p>When programming it can be difficult to keep track of what's happening in a particular bit of code</p>
+				<p>This is where <strong class="blue">comments</strong> come in! They allow you to make notes in your
+				code without them interfering.</p>
+				<p>
+					In Python and Ruby, comment lines are started with a hash sign <strong class="blue">#</strong>).
+				</p>
+
+				<aside class="notes">
+					Just like writing on your monitor with a marker, but scrollable and doesn't make a mess.
+				</aside>
+			</section>
 
 				<section> <!-- Variables: Numbers can be manipulated like numbers, strings are complicated. -->
 					<h2>Variable Ability #2</h2>
@@ -1021,45 +904,17 @@ console.log(kittyVillagePopulation);</code></pre>
 					<strong class="blue">String variables</strong>, however, can only be mashed together.</p>
 
 					<p class="right-align" style="padding-right: 50px;">
-						<a href="https://repl.it/CX4Z/1" target="_blank">(repl.it example)</a>
+						<a href="https://repl.it/DP58/10" target="_blank">(repl.it example)</a>
 					</p>
 					<aside class="notes">
 					 	Now, variable ability number two — you can run calculations
 						with number variables as if they were numbers, but with basic operations,
 						strings can only be mashed together. And now, a demonstration.
 
-						With the variables we gathered earlier from the webpage, we could take
-						bookPrice and bookDiscount to calculated the bookDiscountedPrice, then
-						even create an order total.
-
-						If we then wanted to, say, get rid of the subtitle in the title, and
-						tried to do the obvious thing (subtracting the appropriate part of the string),
-						we run into a problem. NaN. Which is the computer's way of complaining that you're
-						trying to manipulate something that's clearly not a number like a number.
 					</aside>
 				</section>
 
-				<section> <!-- Variables: Numbers can be manipulated like numbers, strings are complicated, illustrated -->
-					<h2>Variable Ability #2</h2>
-					<div class="halfblock fragment" style="width: 48%; margin-right: 2%;">
-						<img style="width: 100%;" src="img/slide-images/thumbsup.gif" alt="Brent Rambo looking away from a computer and giving a thumbs up." />
-						<p class="small">
-							<i>Computers on numbers.</i>
-						</p>
-					</div>
-					<div class="halfblock fragment" style="width: 48%; margin-right: 0%;">
-						<img style="width: 100%;" src="img/slide-images/tinagroan.gif" alt="Brent Rambo looking away from a computer and giving a thumbs up." />
-						<p class="small">
-							<i>Computers on strings.</i>
-						</p>
-					</div>
-					<aside class="notes">
-						Numbers are computers' jam, but strings are a smidge too abstract for computers.
-						It's possible to remove text from strings, but specialized instructions are required
-						to find and then manipulate individual sections of text as if they were alphabet
-						blocks.
-					</aside>
-				</section>
+				
 
 				<section> <!-- Variables: A Quiz -->
 					<h1>Before we move on, a variable mini-quiz!</h1>
@@ -1128,8 +983,7 @@ console.log(kittyVillagePopulation);</code></pre>
 				<section> <!-- Let's try Operators -->
 					<h2>Let's Try Operators!</h2>
 					<ul>
-						<li>For this exercise, we're using <strong class="blue">JavaScript</strong>.</li>
-						<li>We're going to pop over to <a href="https://repl.it/CXo7/3" target="_blank">repl.it</a>.</li>
+						<li>We're going to pop over to <a href="https://repl.it/DP58/12" target="_blank">repl.it</a>.</li>
 					</ul>
 				</section>
 
@@ -1149,37 +1003,10 @@ console.log(kittyVillagePopulation);</code></pre>
 				<section> <!-- Let's Try If/Else Statements -->
 					<h2>Let's Try If/Else!</h2>
           <ul>
-            <li>For this exercise, we're using <strong class="blue">Ruby</strong>.</li>
-            <li>We're going to pop over to <a href="https://repl.it/CXlG" target="_blank">repl.it</a>.</li>
+            <li>We're going to pop over to <a href="https://repl.it/DP58/13" target="_blank">repl.it</a>.</li>
           </ul>
 				</section>
 
-				<section> <!-- Let's Try If/Else Statements -->
-					<h2>Let's Try If/Else: Part 1</h2>
-					<pre><code contenteditable class ="ruby">cart_total = 8
-
-if cart_total > 2
-	print "You get free shipping!"
-end</code></pre>
-					<ul class="small">
-						<li><strong class="blue">Change the numbers</strong> to see what happens.</li>
-						<li><strong class="blue">Change the operators</strong> (greater than, less than, etc.)</li>
-					</ul>
-				</section>
-
-				<section> <!-- Let's Try If/Else Statements -->
-					<h2>Let's Try If/Else: Part 2</h2>
-					<pre><code contenteditable class="ruby">cart_total = 8
-
-if cart_total > 2
-	print "You get free shipping!"
-else
-	print "Sorry buddy, gotta pay for shipping..."
-end</code></pre>
-					<ul class="small">
-						<li><strong class="blue">Manipulate the elements</strong> to see what happens.</li>
-					</ul>
-				</section>
 
 				<section> <!-- Indentation -->
 					<h2>Interlude: What's all this white space?</h2>
@@ -1265,51 +1092,20 @@ while number_of_cars > 0:
         <section> <!-- Let's Loop! -->
           <h2>Let's Do Some Loops!</h2>
           <ul>
-            <li>For this exercise, we're using <strong class="blue">Python</strong>.</li>
-            <li>Go to <a href="https://repl.it/CXa9/2" target="_blank">repl.it</a>.</li>
+            <li>Go to <a href="https://repl.it/DP58/16" target="_blank">repl.it</a>.</li>
           </ul>
         </section>
 
-        <section> <!-- Let's Loop! -->
-          <h2>Let's Do Some Loops!</h2>
-          <pre><code contenteditable class="python">papers_to_deliver = 65
-while papers_to_deliver > 0:
-    print(papers_to_deliver)
-    papers_to_deliver = papers_to_deliver - 1
+      
 
-print('Out of papers! Go home!')</code></pre>
-					<p class="right-align" style="padding-right: 50px;">
-						<a href="https://repl.it/CXa9/2" target="_blank">(repl.it)</a>
-					</p>
-          <ul class="small fragment">
-            <li><strong>Change the numbers</strong> to see what happens</li>
-            <li><strong>Change the operators</strong> (greater than, less than, etc.)</li>
-            <li><strong>Change the string</strong> statements</li>
-          </ul>
-
-					<aside class="notes">
-						Has anyone here played the game Paperboy? Delivering newspapers to subscribers
-						while attempting to avoid death and hitting sweet ramps on bonus levels? Well,
-						this loop is for you. Does anyone want to hazard describing what would happen
-						in this chunk of code?
-					</aside>
-        </section>
-
-        <section> <!-- Loop Logic -->
-          <img style="border: none;" src="img/slide-images/loop-illustration.png" />
-					<aside class="notes">
-						Here's a diagram that runs through the logic of a loop. (Read through
-						diagram)
-					</aside>
-        </section>
-
+       
         <section> <!-- Beware the Infinite Loop! -->
           <h2>Beware the Infinite Loop!</h2>
             <p>An <strong class="blue">infinite loop</strong> is a loop that will never meet the condition to stop.<br> It will keep going until it's used up all your computer's (or server's) memory (RAM). This is bad!</p>
             <p class="green">Example for our loop:</p>
               <ul class="small">
-                <li>If the <span class='code-fragment'><code>papers_to_deliver = papers_to_deliver - 1</code></span> line was missing, it would keep looping because 65 is always greater than 0!</li>
-                <li>If <span class='code-fragment'><code>papers_to_deliver = papers_to_deliver - 1</code></span> was changed to <span class='code-fragment'><code>+ 1</code></span>, it would keep adding 1 to 65 forever!</li>
+                <li>If the <span class='code-fragment'><code>cat_count = cat_count + 1</code></span> line was missing, it would keep looping because 1 is always less than 19!</li>
+                
               </ul>
 
 							<aside class="notes">
@@ -1334,30 +1130,14 @@ print('Out of papers! Go home!')</code></pre>
 						We've run through <strong class="blue">Variables,</strong> <strong class="blue">If/Else Statements</strong>,
 						and <strong class="blue">Loops</strong>... now let's try to think through how we'd use them all together!
 					</p>
-					<p>
-						<strong class="blue">Our Brief: </strong> Fashion a program for a cupcake-delivering robot.
-					</p>
+					
 				</section>
 
-			<section> <!-- Interlude: What's the deal with console.log? -->
-				<h2>Interlude: Commenting</h2>
-				<p>When programming it can be difficult to keep track of what's happening in a particular bit of code</p>
-				<p>This is where <strong class="blue">comments</strong> come in! They allow you to make notes in your
-				code without them interfering.</p>
-				<p>
-					In Python and Ruby, comment lines are started with a hash sign (<strong class="blue">#</strong>). In Javascript, they're started with two front slashes (<strong class="blue">//</strong>)
-				</p>
-
-				<aside class="notes">
-					Just like writing on your monitor with a marker, but scrollable and doesn't make a mess.
-				</aside>
-			</section>
 
 			<section> <!-- Synthesis -->
 				<h2>Let's Try It All Together!</h2>
 				<ul>
-					<li>For this exercise, we're using <strong class="blue">Python</strong>.</li>
-					<li>We're going to pop over to <a href="https://repl.it/CXa9/3" target="_blank">repl.it</a>.</li>
+					<li>We're going to pop over to <a href="https://repl.it/DPXZ/11" target="_blank">repl.it</a>.</li>
 				</ul>
 			</section>
 
@@ -1374,13 +1154,6 @@ print('Out of papers! Go home!')</code></pre>
 				</h2>
 			</section>
 
-			<section> <!-- Wrap Up: Jokes -->
-				<h3 class="blue left-align" style="line-height: 1.2;">
-					A computer programmer rushes his wife to the hospital where she gives birth to their child. The doctor first hands the baby to the programmer.
-				</h3>
-				<h3 class="fragment left-align" style="line-height: 1.2;">"Well?" his wife says impatiently. "Is it a boy, or is it a girl?"<h3>
-				<h3 class="fragment left-align" style="line-height: 1.2;">Smiling tearfully, the programmer replies, "Yes.</h3>
-			</section>
 
 			<section> <!-- Wrap Up: Jokes -->
 				<img src="img/slide-images/ifdog.jpg" alt="A dog being placed into a garbage can upon ambiguous request by signage." />
@@ -1513,7 +1286,7 @@ print('Out of papers! Go home!')</code></pre>
 						<small>Brought to you by <a href="www.girldevelopit.com/chapters/cincinnati">Girl Develop It Cincinnati</a> | <a href="http://www.twitter.com/gdicincinnati">@GDICincinnati</a></small>
 					</p>
 					<p>
-						<small>Presented by Lauren Woodrick | <a href="http://www.twitter.com/loremipsam" target="_blank">@LoremIpsam</a></small>
+						<small>Presented by Amy Moyer </small>
 					</p>
 				</section>
 
@@ -1522,7 +1295,7 @@ print('Out of papers! Go home!')</code></pre>
 			</div>
   		<footer>
         <div class="copyright">
-          Intro to Programming Concepts &mdash; Lauren Woodrick &mdash; GDI Cincinnati
+          Intro to Programming Concepts &mdash; Amy Moyer &mdash; GDI Cincinnati
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
