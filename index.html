@@ -21,7 +21,7 @@
 		<!-- dark editor --> <link rel="stylesheet" href="lib/css/dark.css">
 		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 
-<!-- 		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">-->
+	<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -279,12 +279,24 @@
 					<h2>Program Examples</h3>
 					<div style="float: left; width: 100%;">
 						<img src="img/slide-images/program_examples2.png"  />
+
+						<p>But how do you go from an idea to a computer program? And what IS a computer program?</p>
 					</div>
 					
 					<aside class="notes">
-						One of the ways to accomplish "getting something done" is a list of instructions that tells the computer exactly what to do and allows interaction with human beings. Those instructions have to be written in a "language" that the computer can understand.
+						
 					</aside>
 					
+				</section>
+
+				<section>
+					<h2>Computer Program</h3>
+					<p>
+						One of the ways to accomplish <strong class='blue'>getting something done</strong> is a list of instructions that tells the computer exactly what to do and allows interaction with human beings.
+
+					<p>
+						Those instructions have to be written in a <strong class='blue'>language</strong> that the computer can understand.
+					</p>
 				</section>
 
 				<section>
@@ -293,6 +305,25 @@
 						A programming language is basically a set of strings (letters, numbers, commands) that is changed into machine code that the computer can understand.
 					</p>
 				</section>
+
+				<section>
+					<h2>Computer Programs</h3>
+					<p>
+						Computers don't understand things the same way humans do. Words and symbols that make sense to human eyes need to be translated down to <strong class='blue'>binary</strong> for the computer to understand.
+					</p>
+					
+				</section>
+				<section>
+					<h2>Binary</h3>
+					
+					<p>
+						Binary is a system of expressing everything using only 1s and 0s.<br/>
+						<img src="img/slide-images/binary.png"  />
+					</p>
+				</section>
+
+				
+
 				 <section> <!-- The Evolution of Programming Languages -->
 					<h2>The Evolution of Programming Languages</h2>
 					<ul>
@@ -573,6 +604,14 @@ STOP RUN.</code></pre>
 					<pre><code contenteditable="ruby">puts 'Hello, world!'</code></pre>
 					<small><i>"Hello World" in Ruby.</i></small>
 				</section>
+				<section>
+					<h2>Evolution</h3>
+					
+					<p>
+						From human-readable languages to binary:<br/>
+						<img src="img/slide-images/languages.png"  />
+					</p>
+				</section>
 
 				<section> <!-- How To Talk to Computers -->
 					<h1>How To Talk To Computers</h1>
@@ -631,14 +670,49 @@ STOP RUN.</code></pre>
 					</aside>
 				</section>
 
-				<section> <!-- How To Talk to Computers: A Demonstration -->
+				<section style="top: -298.5px; display: none;" class="past" hidden="">
+				<h3>PEBKAC</h3>
+				<p>Ever heard of the acronym "PEBKAC"?</p>
+				<br>
+				<div>
+					<span class="fragment visible" data-fragment-index="0"><strong>P</strong>roblem</span> 
+					<span class="fragment visible" data-fragment-index="1"><strong>E</strong>xists</span> 
+					<span class="fragment visible" data-fragment-index="2"><strong>B</strong>etween</span> 
+					<span class="fragment visible" data-fragment-index="3"><strong>K</strong>eyboard</span> 
+					<span class="fragment visible" data-fragment-index="4"><strong>A</strong>nd</span> 
+					<span class="fragment visible" data-fragment-index="5"><strong>C</strong>hair</span> 
+				</div>
+				<br>
+				<p class="fragment visible" data-fragment-index="6">In other words, <strong>user error</strong>.</p>
+				<br>
+				<p class="fragment visible" data-fragment-index="7">Remember, when you're writing a program and the computer is executing it, the computer is only doing what you told it to do.  If it's not working the way you expect, look for an error in your program.</p>
+			
+			</section>
+			<section> <!-- How To Talk to Computers: A Demonstration -->
 					<h1>Pseudo Code</h1>
 
-					<img src="img/slide-images/kittyparade.png"  />
+					<img src="img/slide-images/pseudocode.png"  />
 
 					<aside class="notes">
 						Planning ahead is key when programming. Often times programs start on a white board or with pen and paper where the programmer writes out the logic in English. Let's try another example with a cat parade. We have 4 different color of cats that are walking down the street in their own kitty parade! For each cat we're going to make a hatch mark on the cooresponding kitty color's paper. We're going to walk through this like a computer though and go top to bottom in sequential order. 
 					</aside>
+			
+
+			</section>
+			<section> <!-- How To Talk to Computers: A Demonstration -->
+
+
+				<img src="img/slide-images/parade.gif" />
+			</section>
+
+			<section> <!-- How To Talk to Computers: A Demonstration -->
+				
+
+				<img src="img/slide-images/kittyparade.png"  />
+
+			</section>
+			<section>
+					<img src="img/slide-images/catlady.jpg"   />
 				</section>
 
 				<section> <!-- Time to get into coding! -->
@@ -674,6 +748,11 @@ STOP RUN.</code></pre>
 
 						We'll be using Python for this course because I really think it's the most human readable for a beginner. 
 					</aside>
+				</section>
+				<section>
+			
+						<img src="img/slide-images/python.jpg"  />
+					
 				</section>
 
 				<section> <!-- Variables -->
@@ -873,12 +952,22 @@ print kitty_village_population</code></pre>
 				</section>
 
 				<section> <!-- Interlude: Grumpy Cat -->
-					<h2>Grumpy Cat Leaves! Start the Parade</h2>
+					
+					<img src="img/slide-images/kittyvillage.jpg"   />
+				</section>
+				<section>
 					<img src="img/slide-images/grumpy-cat.jpg"   />
+				</section>
+				<section>
+					<img src="img/slide-images/grumpy-village.png"   />
+				</section>
+				<section>
+				<img src="img/slide-images/parade.gif" />
 					<p class="right-align" style="padding-right: 50px;">
 							
 							<a href="https://repl.it/DP58/11" target="_blank">(repl.it)</a>
 						</p>
+					
 					<aside class="notes">
 						The kitty that left the village is ACTUALLY grumpy cat. And that's why our kitty parade started. Cat Colors are our numeric variables. 
 					</aside>
@@ -896,6 +985,9 @@ print kitty_village_population</code></pre>
 				<aside class="notes">
 					Just like writing on your monitor with a marker, but scrollable and doesn't make a mess.
 				</aside>
+			</section>
+			<section> <!-- Interlude: What's the deal with console.log? -->
+				<img src="img/slide-images/grumpy-comment.jpg"   />
 			</section>
 
 				<section> <!-- Variables: Numbers can be manipulated like numbers, strings are complicated. -->
